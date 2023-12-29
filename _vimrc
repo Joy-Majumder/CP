@@ -15,8 +15,9 @@ inoremap {<CR> {<CR>}<Esc>O
 inoremap {{ {
 inoremap {} {}
 
-autocmd filetype c nnoremap <F5> :w <bar> !gcc -std=gnu11 % -o %:r -Wl,--stack,268435456<CR>
-autocmd filetype c nnoremap <F6> :!%:r<CR>
+@REM autocmd filetype c nnoremap <F5> :w <bar> !gcc -std=gnu11 % -o %:r -Wl,--stack,268435456<CR>
+@REM autocmd filetype c nnoremap <F6> :!%:r<CR>
+autocmd filetype c nnoremap <F5> :w <bar> !gcc -std=gnu11 -O2 -Wall % -o %:r && %:r.exe <CR>
 autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -std=c++14 % -o %:r -Wl,--stack,268435456<CR>
 autocmd filetype cpp nnoremap <F10> :!%:r<CR>
 autocmd filetype cpp nnoremap <C-C> :s/^\(\s*\)/\1\/\/<CR> :s/^\(\s*\)\/\/\/\//\1<CR> $
