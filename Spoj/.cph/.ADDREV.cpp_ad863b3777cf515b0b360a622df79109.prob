@@ -1,0 +1,1 @@
+{"name":"Local: ADDREV","url":"/Users/joy0x1/Downloads/Code/CP/Spoj/ADDREV.cpp","tests":[{"id":1794574202798,"input":"3\n24 1\n4358 754\n305 794","output":"34\n1998\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/joy0x1/Downloads/Code/CP/Spoj/ADDREV.cpp","group":"local","local":true}
